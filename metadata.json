@@ -1,0 +1,10 @@
+{
+  "name": "Remix QR Trainee Attendance Tracker",
+  "description": "Offline-ready QR attendance tracking system for Baybay City Technical-Vocational Training Center with camera scanner, digital trainee badges, batch management, and exportable roll-calls.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
