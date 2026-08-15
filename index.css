@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@media print {
+  @page {
+    size: 8.5in 13in portrait;
+    margin: 0.3in 0.3in 0.3in 0.3in;
+  }
+
+  html, body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 12pt;
+  }
+
+  /* Hide non-printable app containers */
+  .no-print,
+  nav,
+  header,
+  aside {
+    display: none !important;
+  }
+
+  /* Print modal container override */
+  .print-modal-container {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    z-index: 99999 !important;
+    overflow: visible !important;
+  }
+
+  .print-page-long-bond {
+    width: 7.9in !important;
+    height: 12.3in !important;
+    max-height: 12.3in !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin: 0 auto !important;
+    padding: 0.1in !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    display: block !important;
+  }
+
+  .print-page-long-bond:last-child {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+
+  .avoid-page-break {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* High contrast border and text for physical printing */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
