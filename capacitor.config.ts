@@ -2,11 +2,9 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.btvtc.attendance',
-  appName: 'BTVTC Attendance Tracker',
+  appName: 'BTVTC Attendance',
   webDir: 'dist',
-  server: {
-    androidScheme: 'https'
-  }
+  bundledWebRuntime: false,
 };
 
 export default config;
